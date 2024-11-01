@@ -1,0 +1,42 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin: 10px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    background-color: #D5BF86;
+    color: #3F0D12;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Couleur de survol */
+.card:hover {
+    background-color: #c0a773; /* Couleur légèrement plus foncée */
+    transform: scale(1.05);
+}
+
+/* Couleur de sélection lors du clic */
+.card:active {
+    background-color: #b38b5d; /* Couleur encore plus foncée */
+}
+ 
+.card img {
+    width: 150px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 24px;
+}
